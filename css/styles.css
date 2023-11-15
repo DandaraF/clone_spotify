@@ -8,12 +8,25 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Utility Classes */
+.btn-primary{
+   background-color: #1DB954;
+   color: white;
+   text-transform: uppercase;
+   padding: 15px 60px;
+   border: none;
+   border-radius: 30px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
 /* Navbar */
 #navbar{
     display: flex;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.6);
     justify-content: center;
     color: white;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -37,70 +50,37 @@ body{
     font-weight: bold;
  }
 
- #navbar .navbar-container li{
+ #navbar .navbar-container ul li{
     padding: 0 20px;
  }
 
- #navbar .navbar-container li:nth-child(4){
-    border-left: 1px solid white;
+ #navbar .navbar-container li:nth-child(3){
+    border-right: 1px solid white;
  }
 
  /* ShowCase */
  #showcase{
+   height: 100vh;
     display: flex;
-    height: 480px;
     justify-content: center;
     align-items: center;
     color: white;
-    background: rgb(2,0,36);
-    box-sizing: border-box;
-    background: linear-gradient(183deg, rgba(2,0,36,1) 0%, rgba(12,103,211,1) 0%, rgba(12,103,211,1) 0%, rgba(2,16,32,1) 33%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 86%);
-
+    background: url("/assets/img/showcase.png") center center/cover;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: color;
 }
 
  #showcase .showcase-container{
-    height: 480px;
-    width: 560px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-sizing: border-box;
-
- }
-
- #showcase .showcase-container .showcase-info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 56px 32px;
-    height: 100%;
-    width: 560px;
-    
+    align-items: center;
  }
 
-
- #showcase .showcase-container .showcase-info .text-value{
-    font-size: 24px;
+ #showcase .showcase-container h2{
+    font-size: 5rem;
  }
 
-
- #showcase .showcase-container .showcase-banner{
-    height: 480px;
-    width: auto;
-    color: red;
+ #showcase .showcase-container p {
+   margin: 15px 0;
+   font-size: 1.1rem;
  }
-
- #showcase .showcase-container .showcase-banner img{
-    height: auto;
- }
- h1{
-    font-size: 40px;
-    font-weight: 700;
- }
- #showcase .showcase-container .showcase-info p{
-    width: 308px;
-    font-size: 11px;
-    line-height: 16px;
- }
-
-
