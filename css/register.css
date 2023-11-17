@@ -9,7 +9,7 @@ body{
 }
 
 /* Navbar */
-#navbar{
+.navbar{
     display: flex;
     width: 100%;
     background-color: var(--default-background);
@@ -18,13 +18,13 @@ body{
     padding-left: 2rem;
 }
 
-#navbar img{
+.navbar img{
     height: 32px;
     width: auto;
     cursor: pointer;
 }
 
-#navbar img:hover{
+.navbar img:hover{
     opacity: 0.6;
 }
 
