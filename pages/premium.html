@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/premium.css">
+
+   <script>
+        let items = [
+            {"img":"/assets/img/no-wifi.png", "title":"Modo offline.", "subtitle": "Ouça música onde estiver." },
+            {"img":"/assets/img/flight-mode.png", "title":"Ouça músicas sem anúncios.", "subtitle": "Curta música sem anúncios.." },
+            {"img":"/assets/img/listening.png", "title":"Ouça na ordem que quiser", "subtitle": "Qualquer música em qualquer ordem." },
+            {"img":"/assets/img/music.png" , "title":"Ouça músicas sem anúncios.", "subtitle": "Sinta o som." },
+        ]
+
+        window.onload = () => {
+
+            for(let i=0; i < items.length; i++){
+                var item = document.createElement("item");
+                item.innerHTML = `
+                    <div class="item"> 
+                        <div class="img"><img src="${items[i].img}" alt="${items[i].title}"></div>
+                        <div class="item-info">
+                            <p class="title">${items[i].title}</p>
+                            <p class="subtitle">${items[i].subtitle}</p> 
+                        </div>
+                    </div>
+                `;          
+                document.getElementsByClassName("items-premium")[0].appendChild(item)
+
+            }
+        }
+
+   </script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <navbar id="navbar"></navbar>
+
+    <!-- Container page -->
+    <div class="container">
+
+        <!-- Premium -->
+        <div class="container-premium">
+            <h1>Porque ser Premium?</h1>
+            <div class="items-premium">  
+                <!-- Item -->
+                <!-- <div class="item"> 
+                    <div class="img"><img src="/assets/img/no-wifi.png" alt="Modo offline"></div>
+                    <div class="item-info">
+                        <p class="title">Modo offline.</p>
+                        <p>Ouça música onde estiver.</p> 
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        
+        <div class="container-choose-plan"></div>
+
+    </div>
+
+     <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="../js/navbar.js"> </script>
+    <script src="../js/footer.js"> </script>
+
+    <script src="https://kit.fontawesome.com/cb0f42993b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

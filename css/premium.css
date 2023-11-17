@@ -1,60 +1,74 @@
+@import "global.css";
+@import "variables.css";
+@import "utility.css";
 
- /* ShowCase */
- #showcase{
+.container{
+    height: 100vh;
     display: flex;
-    height: 480px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-premium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 970px;
+}
+
+.container .container-premium h1{
+    font-size: 40px;
+}
+
+.container .container-premium .items-premium {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .container-premium .items-premium .item{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  space-between;
+    gap:30px;
+    text-align: center;
+}
+
+
+.container .container-premium .items-premium .img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgba(221, 221, 221, 0.609);
+}
+
+.container .container-premium .items-premium .item img{
+    height: 80px;
+    width: 80xp;
+}
+
+.container .container-premium .items-premium .item .item-info{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    background: rgb(2,0,36);
-    box-sizing: border-box;
-    background: linear-gradient(183deg, rgba(2,0,36,1) 0%, rgba(12,103,211,1) 0%, rgba(12,103,211,1) 0%, rgba(2,16,32,1) 33%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 86%);
+    gap: 15px;
 
 }
 
- #showcase .showcase-container{
-    height: 480px;
-    width: 560px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-sizing: border-box;
+.container .container-premium .items-premium .item .item-info .title{
+  font-size: 21px;
+  font-weight: bold; 
+  line-height: 1.3em; 
+}
 
- }
-
- #showcase .showcase-container .showcase-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 56px 32px;
-    height: 100%;
-    width: 560px;
-    
- }
-
-
- #showcase .showcase-container .showcase-info .text-value{
-    font-size: 24px;
- }
-
-
- #showcase .showcase-container .showcase-banner{
-    height: 480px;
-    width: auto;
-    color: red;
- }
-
- #showcase .showcase-container .showcase-banner img{
-    height: auto;
- }
- h1{
-    font-size: 40px;
-    font-weight: 700;
- }
- #showcase .showcase-container .showcase-info p{
-    width: 308px;
-    font-size: 11px;
-    line-height: 16px;
- }
-
+.container .container-premium .items-premium .item .item-info .subtitle{
+    font-size: 16px;
+}
 
