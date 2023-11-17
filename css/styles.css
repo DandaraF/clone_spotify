@@ -29,6 +29,7 @@ body{
    background: var(--light-green);
    cursor: pointer;
 }
+
 .logo{
    height: 40px;
    width: auto; 
@@ -62,12 +63,17 @@ body{
  #navbar .navbar-container ul li{
     padding: 0 20px;
     transition: all  500ms ease;
+    cursor: pointer;
  }
 
- #navbar .navbar-container ul li:hover{
+ #navbar .navbar-container ul li:hover, #navbar .navbar-container ul li a:hover{
    color: var(--default-green);
-   cursor: pointer;
  }
+
+ #navbar .navbar-container ul li a{
+   text-decoration: none;
+   color: white;
+}
 
  #navbar .navbar-container li:nth-child(3){
     border-right: 1px solid white;
@@ -76,13 +82,13 @@ body{
  /* ShowCase */
  #showcase{
    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: url("/assets/img/showcase.png") center center/cover;
-    background-color: rgba(0,0,0,0.6);
-    background-blend-mode: color;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background: url("/assets/img/showcase.png") center center/cover;
+   background-color: rgba(0,0,0,0.6);
+   background-blend-mode: color;
 }
 
  #showcase .showcase-container{
