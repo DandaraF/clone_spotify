@@ -1,0 +1,98 @@
+@import "global.css";
+@import "variables.css";
+@import "utility.css";
+
+body{
+    font-size: 14px;
+    background: var(--default-background);
+    color: white;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    width: 100%;
+    background-color: var(--default-background);
+    height: 101px;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+#navbar img{
+    height: 32px;
+    width: auto;
+    cursor: pointer;
+}
+
+#navbar img:hover{
+    opacity: 0.6;
+}
+
+/* Form */
+#form-container{
+    height: 79vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: var(--default-background);
+}
+
+/* Form content */
+.form-content{
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.form-content h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.form-content .wrapper{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.form-content .wrapper div hr{
+    border-top: 1px solid rgba(122, 122, 122, 0.768);
+    width: 140px;
+}
+
+.form-content .container-button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-content hr{
+    border:0;
+    border-top: 1px solid rgba(115, 115, 115, 0.246);
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-content p u{
+    cursor: pointer;
+}
+
+.form-content p u:hover{
+    color: var(--font-color);
+}
+
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    background-color: var(--default-background);
+    color: white;
+    padding: 24px 0;
+    font-size: 11px;
+    bottom: 0;
+    margin-top: 20px;
+}

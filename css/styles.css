@@ -1,13 +1,5 @@
-:root{
-   --default-green: #1DB954;
-   --light-green: #1ed760;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import "global.css";
+@import "variables.css";
 
 body{
     font-family: 'Roboto', sans-serif;
